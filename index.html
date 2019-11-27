@@ -63,6 +63,19 @@
                     </a>
                 </div>
             </div>
+            <div class="col-md-4">
+                <template>
+                    <div>
+                        <div class="google-map" ref="googleMap">
+                            <tempalte v-if="Boolean(this.google) && Boolean(this.map)">
+                                <slot :google="google" :map="map" />
+                            </tempalte>
+                        </div>
+                    </div>
+                </template>
+
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </div>
     <script type="text/javascript" src="main.js"></script>
